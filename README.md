@@ -22,7 +22,10 @@ python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_fil
 
 ## Model Zoos
 
-All models are provided in:
+Thanks to the authors of DINO, the DINO models trained with FocalNets as the backbones can be found here:
+> **FocalNet-L + DINO**: [DINO + FocalNet-L](https://github.com/IDEA-Research/detrex/tree/main/projects/dino)
+
+All pretrained models on imagenet-1k or imagenet-21k are provided in:
 
 > **Focal Modulation Networks**: [Focal Modulation Networks Model Zoo](https://github.com/microsoft/FocalNet).
 
