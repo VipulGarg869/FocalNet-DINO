@@ -24,9 +24,10 @@ python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_fil
 
 FocalNet-DINO pretrained with Object365:
 
-| Backbone | Method | Pretrained Data | COCO minival mAP | Download
+| Backbone | Method | Pretrained Data | COCO minival mAP (w/o tta) | Download
 | :---: | :---: | :---: | :---: | :---: | 
-FocalNet-L | DINO | Object365 | 63.5 | [o365 ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_pretrained_on_o365.pth)/[coco ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_o365_finetuned_on_coco.pth)
+Swin-L | DINO | Object365 | 63.1 | - |
+FocalNet-L | DINO | Object365 | 63.5 | [in21k ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/classification/focalnet_large_lrf_384_fl4.pth)/[o365 ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_pretrained_on_o365.pth)/[coco ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_o365_finetuned_on_coco.pth)
 
 ## Related Links
 
