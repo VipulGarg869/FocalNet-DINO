@@ -22,6 +22,14 @@ python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_fil
 
 ## Model Zoos
 
+FocalNet-DINO pretrained with Object365:
+
+| Backbone | Method | Pretrained Data | COCO minival mAP | Download
+| :---: | :---: | :---: | :---: | :---: | 
+FocalNet-L | DINO | Object365 | 63.5 | [o365 ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_pretrained_on_o365.pth)/[coco ckpt](https://projects4jw.blob.core.windows.net/focalnet/release/detection/focalnet_large_fl4_o365_finetuned_on_coco.pth)
+
+## Related Links
+
 Thanks to the authors of DINO, the DINO models trained with FocalNets as the backbones can be found here:
 > **FocalNet-L + DINO**: [DINO + FocalNet-L](https://github.com/IDEA-Research/detrex/tree/main/projects/dino)
 
