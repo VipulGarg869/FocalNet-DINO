@@ -14,10 +14,10 @@ Please follow [DINO's instruction](https://github.com/IDEA-Research/DINO) for in
 python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_file config/DINO/DINO_4scale_focalnet_fl3.py --coco_path {coco_path} --output_dir {output_dir}
 ```
 
-* Train on COCO with FocalNet-L with 4 focal levels:
+* Train on COCO with 5scale DINO and FocalNet-L with 4 focal levels:
 
 ```
-python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_file config/DINO/DINO_4scale_focalnet_fl4.py --coco_path {coco_path} --output_dir {output_dir}
+python -m torch.distributed.launch --nproc_per_node={ngpus} main.py --config_file config/DINO/DINO_5scale_focalnet_fl4.py --coco_path {coco_path} --output_dir {output_dir}
 ```
 
 ## Model Zoos
