@@ -225,7 +225,7 @@ def build_backbone(args):
                         parameter.requires_grad_(False)
                         break
 
-        pretrained_dir = '../../input/focalnet-backbone/pytorch/fnd-backbone/1/'
+        pretrained_dir = './'
         PTDICT = {
             'focalnet_L_384_22k': 'focalnet_large_lrf_384.pth',
             'focalnet_L_384_22k_fl4': 'focalnet_large_lrf_384_fl4.pth',            
